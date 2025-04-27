@@ -1,0 +1,169 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #333;
+}
+
+.header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #ef5350;
+  text-transform: capitalize;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #666;
+  text-transform: capitalize;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.imageSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainImage {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.detailsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.versions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  background-color: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.detailItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.detailLabel {
+  font-weight: bold;
+  color: #666;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.detailValue {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ef5350;
+}
+
+.typeSection {
+  background-color: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.typeContainer {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.typeBadge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.statsSection {
+  background-color: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.statName {
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.statValue {
+  font-weight: bold;
+}
+
+.statBar {
+  width: 100%;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.statBarFill {
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 4px;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .versions,
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+}
